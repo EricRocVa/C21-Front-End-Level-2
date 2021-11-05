@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/functions.js" defer></script>
+</head>
+    <body>
+        <!--knoppen ID en classes-->
+        <div id="element1">"button 1"</div>
+        <div id="element2">"button 2"</div>
+        <div class="element3">"button 3"</div>
+        <div class="element4">"button 4"</div>
+        <div class="element5">"button 5"</div>
+        
+        <!--knopelement ID en classes-->
+        <button onclick="document.getElementById('element1').innerHTML = 'hier stond een logo';">button 1</button>
+        <button onclick="document.querySelector('#element2').innerHTML = 'hier stond een logo';">button 2</button>
+        <button class="element3" onclick="document.querySelector('.element3').innerHTML = 'hier stond een logo';">button 3</button>
+        <button class="element4" onclick="document.querySelector('.element4').innerHTML = 'hier stond een logo';">button 4</button>
+        <button class="element5" onclick="document.querySelector('body').innerHTML = 'hier stond een logo';">button 5</button>
+    
+        <div class="element5">"knop 5"</div>
+        <button class="class5" onclick="document.querySelector('body').innerHTML = '<a href=https://youtu.be/xvFZjo5PgG0%22%3E%22%3E%27;%22%3E >Whahaha je bent gerick rollllled!</a>'">knop 5</button> 
+        <button class="class5" onclick="document.querySelector('body').innerHTML = '<a href=https://youtu.be/xvFZjo5PgG0%22%3E%22%3E%27;%22%3E target=”_blank” >klik hier!</a>'">knop 5</button>
+
+    </body>
+</html>

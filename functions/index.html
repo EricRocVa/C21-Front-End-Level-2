@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--hier een link naar de stylesheet, style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--hier een link naar script.js -->
+    <script src="js/script.js" defer></script>
+    <!-- waarom gebruiken we hier het attribute defer? _Dit_attribute_zorgt_ervoor_dat_de_JavaScript_ vul je antwoord in op de lijn
+                                                        pas_geladen_wordt_nadat_het_volledige HTML_ 
+                                                        door_de_browser_geladen_is._--->
+</head>
+<body>
+
+    <div>
+        <button onclick="getName('Eric!');">klik op de button</button> 
+        <!-- vul eens je eigen naam in waar nu staat: vul je naam in hier, echt doen!, wat gebeurd er dan? _Er_verschijnt_een_POP-UP(ook_wel_Alert_genoemd)_met_mijn_naam_erin._ vul je antwoord in op de lijn -->
+    </div>
+
+    <div>
+        <p>Klik een paar keer op het plaatje hieronder</p>
+        <img id="hide" onclick="hideMe();" src="images/item-1.png">
+        <!-- Welke functie wordt hierboven aangeroepen? _De_functie_hideMe_ vul je antwoord in op de lijn en bekijk in script.js wat er gebeurd en vul daar ook een antwoord in-->
+        <img id="show" onclick="show();" src="images/item-2.png">
+        <!-- Welke functie wordt hierboven aangeroepen? _De_functie_show_ vul je antwoord in op de lijn en bekijk in script.js wat er gebeurd en vul daar ook een antwoord in-->
+    </div>
+
+    <div>
+        <p class="som">als ik op de button hieronder klik wat is hier dan de tekst?</p>
+        <!-- wat wordt de content van de p hierboven als ik op de button hieronder klik? _______8______ vul je antwoord in op de lijn-->
+        <button onclick="rekenen(7);">Bereken, klik op mij!</button>
+        <!-- Welke functie wordt hierboven aangeroepen? _De_functie_rekenen_ vul je antwoord in op de lijn en bekijk in script.js wat er gebeurd en vul daar ook een antwoord in-->
+        <!-- wat gebeurd er als je het getal 5 hierboven in een ander getal verandert, probeer dat eens  (refresh wel even je pagina). _het antwoord veranderd ook_ vul je antwoord in op de lijn -->
+    </div>
+
+    <div>
+        <p onclick="this.style.color='aqua';">Klik op mij!</p> 
+        <!-- wordt hier een functie aangeroepen? ___Nee____ vul ja of nee op de lijn in-->
+        <!-- wat gebeurd er met de tekst in het element p? _De_tekst_wordt_lichtblauw_ vul je antwoord in op de lijn -->
+    </div>
+
+    <div>
+        <p onclick="setColor(this, 'orange', '30px');">Klik ook op mij!</p> 
+        <!-- wordt hier een functie aangeroepen? ___Ja____ vul ja of nee op de lijn in-->
+        <!-- wat gebeurd er als ik px vergeet bij 30px (probeer het eens) _als je de px vergeet gebeurt er niks de text blijft even groot_ vul je antwoord in op de lijn -->
+    </div>
+    
+</body>
+</html>
